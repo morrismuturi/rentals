@@ -1,0 +1,45 @@
+
+{% load static%}
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Rooms page</title>
+	<link rel="stylesheet" href="{% static 'css/bootstrap.css' %}"/>
+	<link rel="stylesheet" href="{% static 'css/mysite.css' %}"/>
+</head>
+<script src="{% static 'jquery-3.4.1.min.js'%}"></script>
+<script src="{% static 'main.js'%}"></script>
+<body>
+	<header>
+		<nav class="navbar fixed-top  navbar-expand-lg navbar-light bg-light scrolling-navbar">
+
+			<img class="navbar-brand" src="{% static 'images/rentals.png' %} " alt="rentals"/>
+			
+			<div class="collapse navbar-collapse" id="navbarSupportedContent">
+			<ul class="navbar-nav mr-auto">
+				
+
+				<li class="nav-item">
+					<a href="#">Sign up?</a>
+				</li>
+				<li class="nav-item">
+						<a href="#">Login</a>
+					
+				</li>
+
+			</ul>
+		</div>
+		</nav>
+	</header>
+	{% block content %}
+	{% endblock %}
+	<script src="{% static 'jquery-3.4.1.min.js'%}"></script>
+	<script src="{% static 'main2.js'%}"></script>
+
+	<footer class="page-footer ">
+		<div class="container">
+			
+		</div>
+	</footer>
+</body>
+</html>

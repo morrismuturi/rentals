@@ -1,0 +1,24 @@
+{% extends "base.html"%}
+{% load static %}
+{% block content %}
+
+	<div class="container"> 
+	<form method="POST" id="post-form">
+		{% csrf_token %}
+		<p>What's the name for the Room?</p>
+		<input type="text" name="name" id="name"/>
+		<!-- <select name="name">
+			<option name="name" value="Single">Single</option>
+			<option name="name" value="Double">Double</option>
+			<option name="name" value="Bedsitter">Bedsitter</option>
+
+		</select> -->
+		<p>More information about this type of selection</p>
+		<textarea name="description" id="description"></textarea><br />
+		<input type="submit" value="Add Room" name="addRoom" id="addRoom"/>
+
+		
+	</form>
+</div>
+{% endblock %}
+	
